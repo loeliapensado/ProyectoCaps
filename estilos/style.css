@@ -1,0 +1,477 @@
+/* reset*/
+* {margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+}
+
+/* Configuración menú principal */
+
+header a { 
+    font-size: .6rem;
+    background-color: rgba(121, 231, 218, 0.877);
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: #dcfefa double 3px;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    }
+
+
+header nav ul { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    list-style: none;
+    background-image: url(../imagenes/caps\ frente2.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 80px;
+    margin: 0%
+    }
+
+
+.menu {
+    width: 25px;
+    image-orientation:inherit;
+    
+   }   
+
+/** Configuraciones de titulos principal de las páginas **/
+
+h1 {
+    text-align: center;
+    background-color: #dcfefa;
+    line-height: 150%;
+    letter-spacing: 2px;
+    margin: 0%;
+    padding: 0%;
+    font-family: none;
+    font-size: 1.2rem;
+    text-decoration:none;
+    font-weight: bold;
+    }
+
+
+h2, h3 {
+    font-size: .9rem;
+    padding: 1% 2%;
+    margin-top: 2%;
+    text-align: center;
+    justify-content: center;
+    font-style: none;
+    font-family: none;
+    font-weight: bold;
+    list-style: none;
+    
+}
+
+p {  font-size: .6rem;   
+     margin: 0%;
+     padding: 2%;
+     font-family: none;
+     font-weight: none;
+     text-align: center;
+    }    
+    
+
+main { text-align: center;
+    background-image: url(../imagenes/fondo-ppl.jpg);
+    background-size: 100px 100px;           
+}
+
+/* Configuración de imágenes */
+
+.section-img {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 2% 2%;
+    }
+
+img { 
+    width: 150px;
+    }  
+
+/** Configuraciones de secciones principales**/
+
+.menu-paginas { color: rgb(0, 0, 0);
+    background-color: rgb(121, 231, 218);
+    margin: 0% 25%;         
+   }
+
+/** Configuraciones formulario de la página turnos-contacto **/
+
+
+.formu-padre { background-color: rgba(147, 229, 220, 0.644);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0% 15%;
+    padding: 1%;    
+    border-style: double;
+    border-radius: 3%;
+    border-color: rgb(50, 196, 188);
+    }
+         
+.formu-hijo { display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-style:groove;
+    border-color: rgba(154, 219, 216, 0.219);
+    border-radius: 5%;
+    justify-items: center;
+    }   
+
+
+.boton { font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 4% 25%;
+    padding: 1%; 
+    background-color: white; 
+    border: solid 1px rgb(121, 231, 218) ;
+    border-radius: 5%; 
+    }
+
+.boton:hover { background-color: rgb(121, 231, 218)
+    }
+
+
+/* Configuración del footer */
+
+footer a img { 
+    width: 25px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(121, 231, 218, 0.37);
+    padding: 8px 1px;
+}
+
+ol, ul { 
+    padding-left: 0%;
+    margin-bottom: 0%
+}
+
+footer p {    
+    text-align: center;
+    background-color: rgb(121, 231, 218);
+    height: 4vh;
+    padding-top: 1%;
+}
+
+
+/* ---- CONFIGURACIONES DE MEDIA QUERIES---- */
+
+
+   /* CONFIGURACIÓN PARA SMARTPHONES */
+
+
+@media (max-width: 480px) {
+    /* body {background-color:brown;
+    }  (Usado para diferenciar pantallas en la edición responsive) */
+
+     /* Arreglo detalles página de inicio */
+
+    .p-inicio {text-align: justify;
+        padding: 2% 3%;
+        margin: 2% 8%;
+    }
+
+    /* Arreglo de menú páginas */
+
+    section nav ul li {
+        padding: 2% 0%;
+        list-style: none;
+    }
+
+    /* Arreglo para página de profesionales */
+
+    .profesionales {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(121, 231, 218, 0.37);
+    margin: 0% 25%;
+    padding: 3%;}
+
+    .profe-titu{
+        font-size: 1.5rem;
+    }
+
+    .profe-esp {
+        font-size: 1rem;
+    }
+    .profe-txt {
+         font-size: .6rem;
+    }
+
+    .btn-prof {
+       font-size: .6rem;
+       background-color: rgba(121, 231, 218, 0.37);
+       margin: 10%;             
+    }
+
+    /* Ajuste para footer*/
+
+    footer p {
+    padding-top: 2.5%;
+    }
+}
+
+
+   /* CONFIGURACIÓN PARA TABLETS */
+
+@media (min-width: 481px) and (max-width:978px) {
+       /* body {
+         background-color: rgb(60, 50, 205);
+    } (Usado para diferenciar pantallas en la edición responsive) */
+    
+
+    /* Arreglo para menu principal */
+
+    header nav ul {     
+    height: 110px;
+    margin: 0%;
+    }
+    
+    h2, h3 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 2% 0%;
+        padding: 0% 2%;
+    }     
+ 
+   .menu-titulo {
+        font-size: .9rem;
+    }
+
+   /* Arreglo detalles página de inicio */
+
+    .titulo-ppl {
+       font-size: 2rem;
+    }
+
+    .p-inicio {text-align: justify;
+        font-size: .9rem;
+        padding: 2% 2%;
+        margin: 2% 10%;
+    }
+    
+    .p-inicio2 {
+        margin: 0%;
+        padding: 0%
+    }
+
+   /* Arreglos para secciones principales */
+    
+    .menu-paginas {
+        font-size: 1.2rem;
+        margin: 5% 1%;                       
+    }
+
+    section nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    }
+
+    section nav ul li {
+        padding: 2% 5%;      
+    }
+    
+    .img-prof{
+        width: 230px
+    }
+    .img-consul {
+        width: 200px
+    }
+
+   /* Arreglo para página de profesionales */
+
+    .profesionales {font-size: 1.3rem ;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(121, 231, 218, 0.37);
+    margin: 0% 15%;
+    padding: 3%;}
+
+    .btn-prof {
+    background-color: rgba(121,231, 218, 0.37);
+    margin: 4%;
+    font-size: .7rem;               
+    }
+
+   /* Ajustes parapágina de formularios */
+
+    .formu-padre {
+        margin: 0% 20%;
+    }
+
+    .formu-hijo {
+        margin: 0% 15%
+    }
+
+    .boton { 
+    margin: 4% 30%;
+    padding: 2%; 
+    }
+
+   /* Ajustes para footer */
+
+    .redes {
+        display: flex;
+        justify-content: end;
+    }
+    
+    footer p {
+    margin: 0%;
+    padding-top: .5%;
+    }
+
+}
+
+
+/* CONFIGURACIÓN PARA DESKTOPS */
+
+@media (min-width: 979px) and (max-width: 1920px) {
+      /* body {
+        background-color: yellowgreen;
+    } (Usado para diferenciar pantallas en la edición responsive) */
+
+    /* Ajustes para página prinicpal */
+
+    header nav ul {     
+    height: 150px;
+    margin: 0%;
+    }
+    
+    .titulo-ppl {
+    font-size: 2.5rem;
+    }
+
+    h2, h3 {
+       font-size: 1.5rem;
+       margin: 1% 0%;
+    }
+
+    p {font-size: 1.2rem;
+    padding: 0% 1%;
+    margin: 1% 0%
+    
+    }
+    
+    .p-inicio {
+      
+     margin: 1% 15%;
+     padding: 1% 0%;
+     border: transparent 5px solid;
+     font-size: 1.2rem;
+     text-align: justify;
+    }
+    
+    .menu-titulo {
+        font-size: 1.3rem;            
+    }
+
+    .menu {
+        width: 40px;
+    }        
+
+    .carousel-item {
+    background-color: #dcfefa8e;
+    margin: 0%;
+    padding: 2% 8%;            
+    }
+    
+    
+    .menu-paginas {
+    margin: 0%;
+    border: solid rgb(121, 231, 218) 10px;   
+    }    
+
+    section nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    }
+
+    section nav ul li {
+    padding: 1% 2%;
+    margin: 0% 10%;
+    text-align: center; 
+    list-style: none;}
+
+    .img-prof {
+        width: 300px;
+    }
+
+    .img-consul {
+        width: 260px;
+    }
+
+    /* Arreglo para página de profesionales */
+
+   .profesionales {
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgba(121, 231, 218, 0.37);
+    margin: 0% 25%;
+    padding: 2%;
+    border: solid rgb(254, 255, 253) 15px;}
+
+    .profe-titu{
+        font-size: 1.7rem;
+    }
+
+    .profe-esp {
+        font-size: 1.3rem;
+    }
+    .profe-txt {
+         font-size: .9rem;
+    }
+
+    .btn-prof {
+    background-color: rgba(121,231, 218, 0.37);
+    margin: 3%;                  
+    }
+
+    /* Ajustes para página de formularios*/
+
+    .formu-padre {
+        margin: 0% 25%
+    }
+
+    .formu-hijo {
+        margin: 0% 10%;
+    }
+
+    .boton {
+        padding: 1%;
+        margin: 2% 35%;
+    }
+
+    /* Ajustes para footer*/
+
+    footer div img {
+        width: 40px;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: end;
+    }
+
+    footer p {
+    margin: 0%;
+    padding: 0%;
+    }
+
+}
+
+

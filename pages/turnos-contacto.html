@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPS 2 "TAPALQUÉ"</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+
+</head>
+<body>
+       <!-- MENÚ PRINCIPAL DE TODAS LAS PÁGINAS-->
+    <header>
+        <nav>
+            <ul>
+                <li> <img class="menu" src="../imagenes/iconos/casa.png" alt=""> 
+                    <a class="menu-titulo"  href="../index.html"> Principal</a>
+                </li>
+        
+                <li> <img class="menu" src="../imagenes/iconos/servicios-profesionales.png" alt=""> 
+                <a class="menu-titulo" href="./profesionales.html"> Profesionales </a>
+                </li>
+          
+                <li> <img class="menu" src="../imagenes/iconos/turno-contacto.png" alt="">
+                <a class="menu-titulo" href="turnos-contacto.html"> Turnos/Contactos </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- TÍTULO PRINCIPAL DE TODAS LAS PÁGINAS-->
+
+          <h1 class="titulo-ppl"> CAPS 2 "TAPALQUÉ" </h1>
+          
+        <!-- Formulario para solicitar turno - Falta configurar para que al seleccionar especialidad filtre los profesionales y horarios disponibles -->
+
+          <h2>SOLICITÁ TU TURNO</h2>
+ 
+        <form class="formu-padre" action="submit" method="post">
+            <div class="formu-hijo">
+              <label for="nombre">Nombre: </label>
+              <input type="text">
+            </div>           
+          
+            <div class="formu-hijo">
+              <label for="nombre">Dni: </label>
+              <input type="text"> 
+            </div>
+
+            <div class="formu-hijo">    
+              <div>       
+                <label for=""> Obra Social: </label>
+                <input type="radio" name="" id="">
+                <label for=""> Si </label>
+            
+                <input  type="radio" name="" id="">
+                <label  for=""> No </label>
+              </div>
+
+              <div>      
+                <label for=""> Especifique: </label>
+                <input type="text" name="" id="">
+              </div>
+           </div>
+    
+
+           <div class="formu-hijo">
+             <label for="especialidad"> Especialidad:</label>
+             <select name="" id="">
+              <option value="medico"> Médico/a </option>
+              <option value=""> Odontólogo/a</option>
+              <option value=""> Psicología </option>
+             </select>
+           </div>
+
+          <div class="formu-hijo">     
+            <label for="Profesional"> Profesional:</label>
+            <select name="" id="">
+              <option value=""> Dr. Díaz Carlos</option>
+              <option value=""> Dra. Baldomiro Sofía</option>
+              <option value=""> Od. Garabento Karen</option>
+              <option value="">Ps. Batista Silvio</option>
+            </select>
+          </div>
+
+       <div class="formu-hijo">
+          <label for="Profesional"> Día y Horario:</label>
+            <select name="" id="">
+              <option value=""> Lunes 21 Julio - 09:00 hs. </option>
+              <option value=""> Martes 22 Julio - 10:00 hs.</option>
+              <option value=""> Miércoles 23 Julio - 11:00 hs.</option>
+              <option value=""> Jueves 24 Julio - 12:00 </option>
+            </select>
+       </div>       
+                  
+
+            <input class="boton" type="submit" value=" CONFIRMAR">
+        </form>
+       
+         <!-- Final formulario para solicitar turno -->
+
+
+         <!-- Introducción al formulario de contacto (Falta configurar el formato del formulario)-->
+
+       <h3>DEJANOS TU CONSULTA, COMENTARIO Y/O SUGERENCIA.</h3>
+
+        <form class="formu-padre" action="submit" method="post"> 
+       
+          <div class="formu-hijo">
+              <label for="nombre">Nombre</label>
+              <input type="text"> 
+          </div>
+             
+          <div class="formu-hijo">
+              <label for="Mail">Mail</label>
+              <input type="text" name="" id="">
+          </div>
+            
+          <div class="formu-hijo">
+              <label for="mensaje">Mensaje </label>
+              <textarea name="" id=""></textarea>            
+          </div>               
+       
+              <input class="boton" type="submit" value="ENVIAR">
+        </form>
+
+    <p>RECIBIRÁS UN MAIL DE CONFIRMACIÓN Y CONTESTAREMOS A LA BREVEDAD.</p>
+    <p>GRACIAS POR TU TIEMPO</p>
+
+        <!-- Final del formulario de contacto -->
+         
+
+    </main>
+
+<footer>
+
+  
+     <!-- ENLACE ABSOLUTO PARA REDES SOCIALES -->
+    <div class="redes" >
+
+      <a href="www.facebook.com" >
+      <img src="../imagenes/iconos/redes/facebook-icono.png" alt="Facebook" width="30px">
+      </a> 
+
+      <a href="www.instagram.com" >
+      <img src="../imagenes/iconos/redes/Instagram-icono.png" alt="Instagram" width="30px">
+      </a>
+
+      <a class="wspp" href="www.whatsapp.com" >
+      <img src="../imagenes/iconos/redes/Whatsapp-icono.png" alt="whatsapp" width="30px">
+      </a>
+
+    </div>
+
+    <!-- Final de pagina -->
+
+    <p> 
+        © Todos los derechos reservados 
+    </p> 
+  </footer>
+  
+
+</body>
+</html>
