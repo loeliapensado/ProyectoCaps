@@ -1,0 +1,14 @@
+$celeste: rgb(121, 231, 218);
+$transparente: rgba(121, 231, 218, 0.37);
+$celestes2: rgb(220, 254, 250);
+$negro: rgb(0, 0, 0);
+$font: 'Times New Roman', Times, serif;
+
+// MIXING
+
+@mixin flex {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     justify-items: center;
+}

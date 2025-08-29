@@ -1,0 +1,45 @@
+@use "variables" as*; 
+
+/* Configuración menú principal */
+
+header {
+    nav {
+        ul { 
+             display: flex;
+             flex-direction: row;
+             align-items: center;
+             justify-content:space-around;
+             list-style: none;
+             background-image: url(../imagenes/caps\ frente2.jpg);
+             background-size: cover;
+             background-position:center;
+             height: 80px;
+             margin: 0;
+                        
+            .menu {
+                    width: 25px;
+                    image-orientation:inherit;
+                  }
+                                                      
+            a { 
+               font-size: .6rem;
+               background-color: rgba(121, 231, 218, 0.877);
+               color: $negro;
+               text-decoration: none;
+               letter-spacing: 1px;
+               border: $celestes2 double 3px;
+               padding: 5px;
+               border-radius: 8px;
+               text-align: center;
+               }
+            }
+        }
+    }
+
+    
+
+
+
+ 
+
+

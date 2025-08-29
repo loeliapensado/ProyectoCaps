@@ -1,0 +1,89 @@
+@use "variables" as*; 
+
+/** Configuraciones de titulos principal de las páginas **/
+
+h1 {
+    text-align: center;
+    background-color: $celestes2;
+    line-height: 150%;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+    font-size: 1.2rem;
+    text-decoration:none;
+    font-weight: bold;
+    }
+
+  /* ANIMACIÓN HECHA CON ANIMISTA */
+.titulo-animacion {
+	     -webkit-animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s 2 alternate-reverse both;
+	     animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s 2 alternate-reverse both;
+       }
+
+   @-webkit-keyframes focus-in-expand {
+    0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+     }
+    }
+    
+    @keyframes focus-in-expand {
+     0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+    }
+   }
+
+
+h2 {
+    font-size: .9rem;
+    padding: 1% 2%;
+    margin-top: 2%;
+    text-align: center;
+    justify-content: center;
+    font-style: none;
+    font-family: $font;
+    font-weight: bold;
+    list-style: none;    
+}
+
+h3 {
+    @extend h2;
+}
+
+p {  font-size: .6rem;   
+     margin: 0;
+     padding: 2%;
+     font-family: $font;
+     font-weight: none;
+     text-align: center;
+    }    
+    
+/*Configuación fondo de main*/
+
+main { text-align: center;
+    background-image: url(../imagenes/fondo-ppl.jpg);
+    background-size: 100px 100px;           
+}
+
+/* Configuración de imágenes */
+
+img { 
+    width: 150px;
+    }  
+
