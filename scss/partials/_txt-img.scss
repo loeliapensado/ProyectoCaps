@@ -1,65 +1,68 @@
-@use "variables" as*; 
+@use "variables" as*;
 
 /** Configuraciones de main y de títulos principales de las páginas **/
 
-main { 
+main {
     text-align: center;
     background-image: url(../imagenes/fondo-ppl.jpg);
     background-size: 100px 100px;
     padding-bottom: 6%;
-       
+
     .titulo-ppl {
-    text-align: center;
-    background-color: $celestes2;
-    line-height: 150%;
-    letter-spacing: 2px;
-    margin: 0;
-    padding: 0;
-    font-family: $font;
-    font-size: 1.5rem;
-    text-decoration:none;
-    font-weight: bold;
+        text-align: center;
+        background-color: $celestes2;
+        line-height: 120%;
+        letter-spacing: 2px;
+        margin: 0;
+        padding: 0;
+        font-family: $font;
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-weight: bold;
     }
 
-    h1 { @extend .titulo-ppl;
+    h1 {
+        @extend .titulo-ppl;
         font-size: 1.2rem;
-        }
+    }
 
 }
 
-  /* ANIMACIÓN HECHA CON ANIMISTA */
+/* ANIMACIÓN HECHA CON ANIMISTA */
 .titulo-animacion {
-	     -webkit-animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s 2 alternate-reverse both;
-	     animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s 2 alternate-reverse both;
-       }
+    -webkit-animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s 2 alternate-reverse both;
+    animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s 2 alternate-reverse both;
+}
 
-   @-webkit-keyframes focus-in-expand {
+@-webkit-keyframes focus-in-expand {
     0% {
-    letter-spacing: -0.5em;
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
     }
+
     100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-     }
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
     }
-    
-    @keyframes focus-in-expand {
-     0% {
-    letter-spacing: -0.5em;
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
+}
+
+@keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
     }
+
     100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
     }
-   }
+}
 
 
 h2 {
@@ -72,25 +75,24 @@ h2 {
     font-style: none;
     font-family: $font;
     font-weight: bold;
-    list-style: none;    
+    list-style: none;
 }
 
 h3 {
     @extend h2;
 }
 
-p {  font-size: .6rem;   
-     margin: 0;
-     padding: 2%;
-     font-family: $font;
-     font-weight: none;
-     text-align: center;
-    }    
-    
+p {
+    font-size: .6rem;
+    margin: 0;
+    padding: 2%;
+    font-family: $font;
+    font-weight: none;
+    text-align: center;
+}
+
 /* Configuración de imágenes */
 
-img { 
-    width: 150px;
-    }  
-
-
+img {
+    width: 50%;
+}

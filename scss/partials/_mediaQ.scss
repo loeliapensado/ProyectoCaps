@@ -1,39 +1,40 @@
-@use "variables" as*; 
+@use "variables" as*;
 
 /* ---- CONFIGURACIONES DE MEDIA QUERIES---- */
 
-   /* CONFIGURACIÓN PARA SMARTPHONES */
+/* CONFIGURACIÓN PARA SMARTPHONES */
 
 @media (max-width: 480px) {
-    /* body {background-color:brown;}  (Usado para diferenciar pantallas en la edición responsive) */
+    /* body { background-color: brown;} (Usado para diferenciar pantallas en la edición responsive) */
 
-     /* Arreglo detalles página de inicio */
+    /* Arreglo detalles página de inicio */
 
-    .p-inicio {text-align: justify;
+    .p-inicio {
+        text-align: justify;
         padding: 2% 3%;
         margin: 2% 8%;
     }
 
-    /* Arreglo de menú páginas */
+    .img-prof,
+    .img-consul {
+        width: 40%;
+        margin-bottom: 5%;
+    }
 
-    .menu {
-        padding: 2% 0;
-        list-style: none;
-        }
-        
     /* Arreglo para página de profesionales */
 
     .profesionales {
-         font-family: $font;
-         background-color: $transparente;
-         margin: 5% 10%;
-         padding: 6%;
-         border-radius: 15px;
+        font-family: $font;
+        background-color: $transparente;
+        margin: 5% 10%;
+        padding: 6%;
+        border-radius: 15px;
 
         .card-img-top {
             border-radius: 15px 15px 0 0;
-         }
-        .prof-card{
+        }
+
+        .prof-card {
             border-radius: 30px;
             margin-bottom: 6%;
         }
@@ -44,113 +45,301 @@
         }
 
         .profe-esp {
-        font-size: 1rem;
-        font-weight: bold;
+            font-size: 1rem;
+            font-weight: bold;
         }
 
         .profe-txt {
-             font-size: .6rem;
-             justify-content: center;
-             }
+            font-size: .6rem;
+            justify-content: center;
+        }
 
         .btn-prof {
-           font-size: .6rem;
-           background-color: $celeste;
-           margin: 5%;   
-           border-radius: 30px; 
-           letter-spacing: 1px;
-           font-weight: bold ;
+            font-size: .6rem;
+            background-color: $celeste;
+            margin: 5%;
+            border-radius: 30px;
+            letter-spacing: 1px;
+            font-weight: bold;
         }
     }
 }
 
 /* CONFIGURACIÓN PARA TABLETS */
 
-@media (min-width: 481px) and (max-width:978px) {
-     /* body { background-color: rgb(60, 50, 205);
-    } (Usado para diferenciar pantallas en la edición responsive) */    
+@media (min-width: 481px) and (max-width:768px) {
+   /* body { background-color: orange; } (Usado para diferenciar pantallas en la edición responsive) */
 
     /* Arreglo para menu principal */
 
-header nav ul {     
-    height: 100px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-        
-    .menus {
-        width: 50px;
-        margin: 3% 40%;
+    header nav ul {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+
+        .menus {
+            width: 20%;
+            margin: 3% 40%;
         }
 
-    .menus-titulo {
-        font-size: 1.7rem;
-        font-family: $font;
-        padding: 2% 4%;
-        margin: 1% 15%;
+        .menus-titulo {
+            font-size: 1rem;
+            font-family: $font;
+            padding: 2% 4%;
+            margin: 1%;
         }
     }
 
     /* Arreglo detalles de textos página de inicio */
-    
-    h2, h3 {
-        font-size: 1.5rem;
+
+    h2,
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 2% 0%;
+        padding: 0% 2%;
+    }
+
+    main {
+
+        .titulo-ppl {
+            font-size: 2.2rem;
         }
+
+        h1 {
+            font-size: 1.9rem;
+        }
+
+        .p-inicio {
+            text-align: justify;
+            font-size: 1.1rem;
+            padding: 2% 2%;
+            margin: 2% 5%;
+        }
+
+        .p-inicio2 {
+            margin: 0 2%;
+            padding: 0;
+        }
+    }
+
+    /* Arreglos para secciones principales en index */
+
+    section nav ul {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+        list-style: none;
+
+        li {
+            padding: 1% 0;
+
+            .menus-paginas {
+                font-size: 1.5rem;
+                margin: 0 2%;
+            }
+
+            img {
+                width: 80%;
+            }
+        }
+    }
+
+    /* Arreglo para página de profesionales */
+
+    .profesionales {
+        font-family: $font;
+        background-color: $transparente;
+        margin: 2% 10%;
+        padding: 5%;
+        border-radius: 50px;
+
+        .card-img-top {
+            border-radius: 25px 25px 0 0;
+        }
+
+        .prof-card {
+            border-radius: 30px;
+            margin-bottom: 5%;
+        }
+
+        .profe-titu {
+            color: $celeste;
+            font-size: 2.2rem;
+            text-shadow: 3px -1px 0 black;
+            font-weight: bold;
+        }
+
+        .profe-esp {
+            font-size: 1.5rem;
+            text-decoration: underline;
+        }
+
+        .profe-txt {
+            font-size: 1.2rem;
+            text-align: justify;
+        }
+
+        .btn-prof {
+            background-color: $celeste;
+            margin: 4%;
+            padding: 3% 12%;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .btn-ajt {
+            margin-top: 12%;
+        }
+    }
+
+    /* Ajustes parapágina de formularios */
+
+    .formu-padre {
+        margin: 2% 12%;
+        font-family: $font;
+        letter-spacing: 1px;
+
+        .formu-hijo {
+            margin: 0 10%;
+            font-size: 1.9rem;
+
+            select,
+            textarea,
+            input {
+                padding: 15px;
+                font-size: 1.2rem;
+            }
+        }
+
+        .boton {
+            margin: 4% 20%;
+            padding: 2%;
+            font-size: 1.5rem;
+        }
+    }
+
+    /* Ajustes para footer */
+
+    footer {
+        .redes {
+            @include flexMenu;
+            justify-content: space-around;
+
+            img {
+                width: 50px;
+            }
+        }
+
+        .img-maps {
+
+            .enlace-maps {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 1.5% 0;
+    }
+}
+
+/* MEDIA QUERIES PARA TABLET 2*/
+
+@media (min-width: 769px) and (max-width:978px) {
+   /* body { background-color: rgb(60, 50, 205);} (Usado para diferenciar pantallas en la edición responsive) */
+
+    /* Arreglo para menu principal */
+
+    header nav ul {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+
+        .menus {
+            width: 15%;
+            margin: 3% 40%;
+        }
+
+        .menus-titulo {
+            font-size: 1.2rem;
+            font-family: $font;
+            padding: 2% 4%;
+            margin: 1% 15%;
+        }
+    }
+
+    /* Arreglo detalles de textos página de inicio */
+
+    h2,
+    h3 {
+        font-size: 1.5rem;
+    }
 
     p {
         font-size: 1.2rem;
         margin: 2% 0%;
         padding: 0% 2%;
-        }
-
-main{
-
-    .titulo-ppl {
-       font-size: 2.5rem;
-       }
-    h1 {
-        font-size: 2rem;
-       }  
-  
-    .p-inicio {text-align: justify;
-        font-size: 1.2rem;
-        padding: 2% 2%;
-        margin: 2% 5%;
-        }
-    
-    .p-inicio2 {
-        margin: 0;
-        padding: 0;
-        } 
     }
 
-   /* Arreglos para secciones principales en index */
-    
-section nav ul {
-    flex-direction: row;
-    display: flex;
-    list-style: none;
-    justify-content: center;
-        
-    li {
-        padding: 2% 6%; 
+    main {
 
-        .menus-paginas {
-           font-size: 1.6rem;
-           margin: 0 1%;   
-             }
-        
-        .img-prof{
-           width: 280px;
-             }
+        .titulo-ppl {
+            font-size: 2.5rem;
+        }
 
-        .img-consul {
-           width: 240px;
-             }  
+        h1 {
+            font-size: 2rem;
+        }
+
+        .p-inicio {
+            text-align: justify;
+            font-size: 1.2rem;
+            padding: 2% 2%;
+            margin: 2% 5%;
+        }
+
+        .p-inicio2 {
+            margin: 0;
+            padding: 0;
         }
     }
-     
-   /* Arreglo para página de profesionales */
+
+    /* Arreglos para secciones principales en index */
+
+    section nav ul {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+        list-style: none;
+
+        li {
+            padding: 1% 0;
+
+            .menus-paginas {
+                font-size: 1.5rem;
+                margin: 0 2%;
+            }
+
+            img {
+                width: 80%;
+            }
+        }
+    }
+
+    /* Arreglo para página de profesionales */
 
     .profesionales {
         font-family: $font;
@@ -161,155 +350,160 @@ section nav ul {
 
         .card-img-top {
             border-radius: 25px 25px 0 0;
-            }
+        }
 
-        .prof-card{
+        .prof-card {
             border-radius: 30px;
             margin-bottom: 5%;
-            }
+        }
 
-        .profe-titu{
+        .profe-titu {
             color: $celeste;
             font-size: 2.2rem;
             text-shadow: 3px -1px 0 black;
             font-weight: bold;
-            }
+        }
 
         .profe-esp {
             font-size: 1.5rem;
             text-decoration: underline;
-            }
+        }
 
         .profe-txt {
             font-size: 1.2rem;
             text-align: justify;
-            }
+        }
 
-        .btn-prof {        
+        .btn-prof {
             background-color: $celeste;
             margin: 4%;
             padding: 3% 12%;
-            font-size: 1.2rem;      
-            letter-spacing: 1px;      
-            border-radius: 20px;  
-            font-weight: bold; 
-            }
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
         .btn-ajt {
             margin-top: 12%;
-            }
-       }
+        }
+    }
 
-   /* Ajustes parapágina de formularios */
+    /* Ajustes parapágina de formularios */
 
     .formu-padre {
         margin: 2% 12%;
         font-family: $font;
         letter-spacing: 1px;
-        
+
         .formu-hijo {
             margin: 0 10%;
-            font-size: 1.9rem;
-            
-        select, textarea, input { padding: 15px;
-            font-size: 1.2rem;         
-            }    
+            font-size: 1.5rem;
+
+            select,
+            textarea,
+            input {
+                padding: 1%;
+                font-size: 1.2rem;
+            }
         }
 
-        .boton { 
-        margin: 4% 20%;
-        padding: 2%; 
-        font-size: 1.5rem;        
+        .boton {
+            margin: 4% 20%;
+            padding: 2%;
+            font-size: 1.5rem;
         }
-     }
+    }
 
-   /* Ajustes para footer */
+    /* Ajustes para footer */
 
     footer {
         .redes {
-           @include flexMenu;
-           justify-content: space-around;
-          
-           img { 
-              width: 50px;
-               }
-        }   
+            @include flexMenu;
+            justify-content: space-around;
 
-       .img-maps {
-
-           .enlace-maps {
-              width: 600px;
-              height: 220px;
-              margin: 2% 15%;
-              }
+            img {
+                width: 50px;
+            }
         }
-      }
 
-        p {
-          font-size: 1.5rem;
-          margin: 0;
-          padding: 1.5% 0;
+        .img-maps {
+
+            .enlace-maps {
+                width: 100%;
+                height: 80%;
+                margin: 0;
+            }
         }
     }
+
+    p {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 1.5% 0;
+    }
+}
 
 
 /* CONFIGURACIÓN PARA DESKTOPS */
 
 @media (min-width: 979px) and (max-width: 1920px) {
-      /* body { background-color: yellowgreen;} 
-        (Usado para diferenciar pantallas en la edición responsive) */
+   /* body { background-color: yellowgreen;} (Usado para diferenciar pantallas en la edición responsive) */
 
     /* Ajustes para textos */
 
-main {
-      padding-bottom: 5%;
-    
-      .titulo-ppl {
-         font-size: 2.2rem;
-         letter-spacing: 5px;
-         } 
-    
-       h1 {
-         font-size: 1.9rem;
-         padding: 0%;
-         } 
+    main {
+        padding-bottom: 5%;
 
-       h2, h3 {
-         font-size: 1.7rem;
-         margin: 1% 0;
-         }
+        .titulo-ppl {
+            font-size: 2.2rem;
+            letter-spacing: 5px;
+        }
 
-       .p-inicio {
-          margin: 1% 8%;
-          padding: 1% 0;
-          font-size: 1.3rem;
-          text-align: justify;
-          }
+        h1 {
+            font-size: 1.9rem;
+            padding: 0%;
+        }
+
+        h2,
+        h3 {
+            font-size: 1.7rem;
+            margin: 1% 0;
+        }
+
+        .p-inicio {
+            margin: 1% 8%;
+            padding: 1% 0;
+            font-size: 1.3rem;
+            text-align: justify;
+        }
 
         .p-inicio2 {
-          font-size: 1.5rem;
-          padding: 0;
-          margin: 1% 0;    
-          }    
+            font-size: 1.5rem;
+            padding: 0;
+            margin: 1% 0;
+        }
     }
 
     /* Ajustes para menú todas las páginas */
 
-    header nav ul {      
-         height: 100px;
-         margin: 0;
-         background-size: cover;
+    header nav ul {
+        height: 100%;
+        margin: 0;
+        background-size: cover;
         @include flexMenu;
-    
+
         .menus {
-           width: 40px;
-           }  
+            width: 10%;
+        }
+
         .menus-titulo {
-           font-family: $font;
-           font-size: 1.3rem;        
-           }
+            font-family: $font;
+            font-size: 1.3rem;
+        }
     }
-    
-    /* Ajustes carrousel de img en index */    
+
+    /* Ajustes carrousel de img en index */
 
     .carou-img {
         background-color: rgba(220, 254, 250, 0.557);
@@ -317,39 +511,35 @@ main {
         padding: 2% 5%;
     }
 
-    /* Ajustes de menú páginas */ 
+    /* Ajustes de menú páginas */
 
     section nav ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
         list-style: none;
-    
+
         li {
             padding: 1% 2%;
             margin: 0 10%;
-            text-align: center; 
+            text-align: center;
             list-style: none;
-            
+
             .menus-paginas {
-            background-color: $celeste;
-            margin: 0;
-            border: solid $celeste 10px;   
+                background-color: $celeste;
+                margin: 0;
+                border: solid $celeste 10px;
             }
-            .img-prof {
-            width: 300px;
-            }
-            .img-consul {
-            width: 280px;
-            height: 250px;
-            
+
+            img {
+                width: 100%;
             }
         }
-    }       
- 
+    }
+
     /* Arreglo para página de profesionales */
 
-   .profesionales {
+    .profesionales {
         font-family: $font;
         background-color: $transparente;
         margin: 0 3%;
@@ -359,86 +549,103 @@ main {
 
         .card-img-top {
             border-radius: 25px 25px 0 0;
-            }
+        }
 
-        .prof-card{
+        .prof-card {
             border-radius: 30px;
             margin-bottom: 5%;
-            }
+        }
+
         .profe-titu {
             color: $celeste;
             font-size: 2rem;
             text-shadow: 3px -1px 0 black;
-            font-weight: bold;          
-            }
+            font-weight: bold;
+        }
 
         .profe-esp {
             font-size: 1.3rem;
-            }
-            
+        }
+
         .profe-txt {
-             font-size: .8rem;
-             text-align: justify;
-             }
-               
+            font-size: .8rem;
+            text-align: justify;
+        }
+
         .btn-prof {
             background-color: $celeste;
             margin: 4%;
             border-radius: 15px;
-            font-weight: bold; 
-            &:hover { background-color: $transparente;
-            transform: scale(1.2,1.3);
-            }  
-         }
+            font-weight: bold;
 
-        .btn-aj { 
-            margin-top: 10.5%;
-            } 
-       }
+            &:hover {
+                background-color: $transparente;
+                transform: scale(1.2, 1.3);
+            }
+        }
+
+        .btn-aj {
+            margin-top: 5%;
+        }
+    }
 
     /* Ajustes para página de formularios*/
 
     .formu-padre {
         margin: 0 25%;
 
-       .formu-hijo {
-          margin: 0 10%;
-          }
+        .formu-hijo {
+            margin: 0 8%;
+            font-size: 1.6rem;
+            letter-spacing: 5px;
+
+            select,
+            textarea,
+            input {
+                padding: 2%;
+                font-size: 1rem;
+            }
+        }
 
         .boton {
-          padding: 1%;
-          margin: 2% 35%;
-          &:hover { background-color: $celestes2;
-          transform: scale(1.2,1.3);
-          }
+            padding: 1%;
+            margin: 2% 35%;
+
+            &:hover {
+                background-color: $celestes2;
+                transform: scale(1.2, 1.3);
+            }
         }
     }
-    
+
+    .txt-form {
+        font-size: 1.3rem;
+    }
+
     /* Ajustes para footer*/
 
     footer {
         .redes {
-           @include flexMenu;
-           justify-content: space-around;
-          
-           img { 
-             width: 60px;
-             }
-        }      
-      
-        .img-maps {
-           .enlace-maps {
-             width: 1000px;
-             height: 220px;
-             margin: 1.5% 15% 1% 12% ;
-             }
+            @include flexMenu;
+            justify-content: space-around;
+            padding: 1%;
+
+            img {
+                width: 60px;
+            }
         }
-      }
+
+        .img-maps {
+            .enlace-maps {
+                width: 100%;
+                height: 80%;
+            }
+        }
 
         p {
-          font-size: 1.8rem;
-          margin: 0;
-          padding: 1.5% 0;
+            font-size: 1.4rem;
+            margin: 0;
+            padding: 1% 0;
         }
+    }
 }
-

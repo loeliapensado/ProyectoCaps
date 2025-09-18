@@ -1,16 +1,19 @@
-@use "variables" as*; 
+@use "variables" as*;
 
 /** Configuraciones de secciones principales**/
 
-section {
-    .p-inicio2 { margin: 0;
-        padding: 0 0 2% 0;
+main {
+    section {
+        .p-inicio2 {
+            margin: 0;
+            padding: 0 0 2% 0;
         }
-}
-
-.menus-paginas { color: $negro;
-    background-color: $transparente;
-    margin: 0 25%;         
     }
 
-
+    .menus-paginas {
+        color: $negro;
+        background-color: $transparente;
+        margin: 0 25%;
+        padding: 2%;
+    }
+}
