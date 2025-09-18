@@ -5,29 +5,48 @@
 
 .formu-padre { 
     @include flex;
+    gap: 5px;
     background-color: $celeste;
-    margin: 0 15%;
+    margin: 3% 15%;
     padding: 1%;    
     border-style: double;
-    border-radius: 3%;
+    border-radius: 40px;
     border-color: rgb(50, 196, 188);
-    background-image: radial-gradient($transparente, $celestes2);
+    background-image: radial-gradient($transparente, $celestes2); 
+    font-size: 1.2rem;  
+    letter-spacing: 1px; 
 
       .formu-hijo { @include flex;
-      padding: 10px;
-      border-style:groove;
-      border-color: rgba(154, 219, 216, 0.219);
-      border-radius: 5%;
+        padding: 5px;
+        margin: 2px 15px;
+
+      select {    padding: 5px;
+        border-radius: 40px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.864);
+        border: 2px solid $celeste;
+        font-size: 16px;  
+        }
+
+      textarea {
+        @extend select;
+        }
+
+      input {
+        @extend select;
+        }
       } 
-      
+
       .boton { font-family: $font;
-      font-weight: bold;
-      margin: 4% 25%;
-      padding: 1%; 
-      background-color: white; 
-      border: solid 4px $celeste;
-      border-radius: 5%; 
-      }
+        font-weight: bold;
+        margin: 4% 15%;
+        padding: 2%; 
+        background-color: $celeste; 
+        border: solid 4px $celestes2;
+        border-radius: 35px; 
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        }
     }
          
   

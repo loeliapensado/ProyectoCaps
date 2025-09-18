@@ -2,25 +2,42 @@
 
 /* Configuración del footer */
 footer {
+    p {
+       padding: 1%;
+       font-family: $font;
+       background-color: $celeste;
+       
+      .p-maps {
+        font-size: .7rem;   
+        font-family: $font; 
+        padding: 1% 0;   
+        margin: 1% 0; 
+        background-color: $transparente;
+        }
+      }
+    
     .redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    background-color: $celestes2;
-    padding: 8px 1px;
-    img { 
-    width: 25px;
-    }
-    }    
-    p {    
-    text-align: center;
-    background-color: $celeste;
-    height: 3vh;
-    padding: 0;
-    }
-}
+      @include flexMenu;
+      justify-content: space-evenly;
+      background-color: $celestes2;
+      padding: 10px 0px;
+    
+      img { 
+           width: 25px;
+          }
+      }    
+   
+    .img-maps {
+      background-color: $celestes2;
+      margin: 0;
 
-/*Arreglo para acomodar padding y margin sobrante*/
- ol, ul { 
-  padding-left: 0%;
-   margin-bottom: 0%;}
+      .enlace-maps {
+        width: 380px;
+        margin: 5%;
+        }
+      }
+  }    
+
+ /*Arreglo para acomodar padding y margin sobrante*/
+    ul {    padding-left: 0%;
+            margin-bottom: 0%;}

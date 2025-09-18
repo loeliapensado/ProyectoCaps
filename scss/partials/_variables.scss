@@ -12,3 +12,11 @@ $font: 'Times New Roman', Times, serif;
      text-align: center;
      justify-items: center;
 }
+
+@mixin flexMenu {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content:space-around;
+     list-style: none;  
+}
